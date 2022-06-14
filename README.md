@@ -1,7 +1,5 @@
 # Flutter · TODO web and mobile app
 
-![Coverage](readme_images/coverage_badge.svg?sanitize=true)
-
 To-do List app using with Firebase, using RiverPod as state management and dependency injection.
 
 ### Below there are a few instructions about mandatory commands to be run in order to facilitate the work.
