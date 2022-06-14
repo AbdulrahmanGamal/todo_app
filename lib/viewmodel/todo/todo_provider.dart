@@ -11,8 +11,8 @@ final todoListPod = StreamProvider.autoDispose.family<List<Todo>, String>(
 final todoDetailPod = FutureProvider.autoDispose.family<Todo?, String>(
   (ref, param) {
     final params = param.split(',');
-    return params[0].isNotEmpty && params[1].isNotEmpty
-        ? ref.watch(todoRepositoryPod).getTodoById(params[0])
+    return  params[1].isNotEmpty
+        ? ref.watch(todoRepositoryPod).getTodoById(params[1])
         : Future.value();
   },
 );
