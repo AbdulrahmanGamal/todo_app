@@ -20,7 +20,7 @@ docker build --no-cache -t up .
 
 ### After Success building image
 
-Run the docker image with localhost 1200 port. You can change to any other port just replace it.
+Run the docker image with localhost 8080 port. You can change to any other port just replace it.
 
 ```bash
 docker run -d -p 8080:80 --name todoapp up
