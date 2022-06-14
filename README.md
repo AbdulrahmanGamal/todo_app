@@ -25,6 +25,7 @@ Run the docker image with localhost 1200 port. You can change to any other port 
 ```bash
 docker run -d -p 8080:80 --name todoapp up
 ```
+- Also its accessible throw this link : http://localhost:8080/#/todo
 
 ### to run project unit test and widget test use
 
