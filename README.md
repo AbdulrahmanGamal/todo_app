@@ -81,15 +81,15 @@ and any devices, like mobile phones, tablets, computers, notebooks, etc.
     <td><img src="readme_images/android7.png" width=270 height=480></td>
   </tr>
 <tr>
-    <td><img src="readme_images/web1.png" width=900 height=900></td>
+    <td><img src="readme_images/web1.png" ></td>
 
 
 </tr>
 <tr>
-   img src="readme_images/web2.png" width=900 height=900></td>
+   img src="readme_images/web2.png" ></td>
 </tr>
 <tr>
-    <td><img src="readme_images/web3.png" width=900 height=900></td>
+    <td><img src="readme_images/web3.png" ></td>
 </tr>
 
 
