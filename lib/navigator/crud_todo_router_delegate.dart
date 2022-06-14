@@ -1,3 +1,5 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
 import 'package:todo_app/navigator/config/crud_todo_config.dart';
 import 'package:todo_app/navigator/crud_todo_pages.dart';
@@ -27,7 +29,7 @@ class CrudTodoRouterDelegate extends RouterDelegate<CrudTodoConfig>
   void selectCurrentTodo(String? value, {required bool isSelected}) {
     _todoId = value;
     _isTodoSelected = isSelected;
-
+    print("selectCurrentTodo : ${value}");
     notifyListeners();
   }
 
@@ -69,13 +71,14 @@ class CrudTodoRouterDelegate extends RouterDelegate<CrudTodoConfig>
         if (is404)
           const UnknownPage()
         else ...[
-            TodoPage(
+          FormTodoPage( todoId: todoId),
+          TodoPage(
               onGoToTodo: ( todoId) => selectCurrentTodo(
                 todoId,
                 isSelected: true,
               ),
             ),
-            FormTodoPage( todoId: todoId)
+
         ]
       ],
       onPopPage: (route, dynamic result) {
@@ -99,7 +102,6 @@ class CrudTodoRouterDelegate extends RouterDelegate<CrudTodoConfig>
     } else if (is404) {
       return const CrudTodoConfigUnknown();
     }
-
     return null;
   }
 

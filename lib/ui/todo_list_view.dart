@@ -31,36 +31,9 @@ class TodoListView extends HookConsumerWidget {
     return ContextMenuOverlay(
       child: Scaffold(
         backgroundColor: const Color(0xFF4A78FA),
-        appBar: AppBar(
-          elevation: 0,
-          backgroundColor: Colors.transparent,
-          leading: IconButton(
-            icon: const Icon(Icons.arrow_back_ios, color: Colors.white),
-            onPressed: () => Navigator.pop(context),
-          ),
-        ),
         body: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-                  Expanded(
-                    flex: isPortrait(context) ? 1 : 2,
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: <Widget>[
-                        Container(
-                          height: 60,
-                          width: 60,
-                          alignment: Alignment.center,
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(30),
-                          ),
-                        ),
-
-                      ],
-                    ).paddingOnly(l: 35),
-                  ),
                   Expanded(
                     flex: 2,
                     child: todoData.when(
