@@ -80,6 +80,9 @@ and any devices, like mobile phones, tablets, computers, notebooks, etc.
 <tr>
     <td><img src="readme_images/android7.png" width=270 height=480></td>
   </tr>
+ </table>
+
+<table>
 <tr>
     <td><img src="readme_images/web1.png" ></td>
 
@@ -92,8 +95,4 @@ and any devices, like mobile phones, tablets, computers, notebooks, etc.
     <td><img src="readme_images/web3.png" ></td>
 </tr>
 
-
- </table>
-
-
-
+</table>
