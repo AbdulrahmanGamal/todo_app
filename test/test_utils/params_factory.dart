@@ -1,4 +1,3 @@
-import 'package:dart_emoji/dart_emoji.dart';
 import 'package:todo_app/model/todo_model.dart';
 
 

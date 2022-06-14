@@ -4,6 +4,7 @@ import 'package:flutter_slidable/flutter_slidable.dart';
 import 'package:todo_app/common/extension.dart';
 import 'package:todo_app/ui/widgets/todo_item_tile.dart';
 
+
 import '../../model/todo_model.dart';
 
 class TodoItem extends StatelessWidget {
@@ -67,7 +68,6 @@ class TodoItem extends StatelessWidget {
 
     return isSlidable
         ? Slidable(
-            enabled: !todo.isCompleted,
             startActionPane:
                 onEdit != null && !todo.finalDate.isDurationNegative
                     ? ActionPane(
@@ -98,7 +98,6 @@ class TodoItem extends StatelessWidget {
             child: itemTile,
           )
         : ContextMenuRegion(
-            isEnabled: !todo.isCompleted,
             contextMenu: Container(
               width: 150,
               padding: const EdgeInsets.all(10),

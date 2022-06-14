@@ -37,6 +37,7 @@ DeviceSegment getDevice() {
 
   if (kIsWeb && isMobile) return DeviceSegment.mobileWeb;
   if (kIsWeb && isDesktop) return DeviceSegment.desktopWeb;
+  if (kIsWeb) return DeviceSegment.desktopWeb;
 
   return DeviceSegment.other;
 }

@@ -85,7 +85,7 @@ void main() {
       expect(result, isA<Future<Todo>>());
       expect(finalResult, isA<Todo>());
       verify(() => mockFirestoreInstance.collection(any()).doc(any()))
-          .called(1);
+          .called(2);
     });
 
     test("Get $Exception if todo by id doesn't exists", () async {

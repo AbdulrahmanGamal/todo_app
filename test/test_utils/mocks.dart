@@ -14,8 +14,7 @@ class MyRouteFake extends Fake implements Route<dynamic> {}
 
 class MockFirestore extends Mock implements FirebaseFirestore {}
 
-class MockCollectionReference extends Mock
-    implements CollectionReference<Map<String, dynamic>> {}
+class MockCollectionReference extends Mock implements CollectionReference<Map<String, dynamic>> {}
 
 class MockQuerySnapshot extends Mock
     implements QuerySnapshot<Map<String, dynamic>> {}
@@ -34,7 +33,6 @@ class MockDocumentReference extends Mock
 class MockDocumentSnapshot extends Mock
     implements DocumentSnapshot<Map<String, dynamic>> {
   MockDocumentSnapshot(this.id);
-
   @override
   final String id;
 }

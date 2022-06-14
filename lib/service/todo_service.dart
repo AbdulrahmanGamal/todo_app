@@ -16,7 +16,9 @@ class TodoService {
         .snapshots();
 
     return querySnapshot.map(
-      (query) => [for (var item in query.docs) Todo.fromJson(item.toMap())],
+      (query) => [
+          for (var item in query.docs) Todo.fromJson(item.toMap())
+      ],
     );
   }
 
