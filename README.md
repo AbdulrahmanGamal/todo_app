@@ -1,11 +1,11 @@
-# Flutter ·  TODO web and mobile app
+# Flutter · TODO web and mobile app
 
 ![Coverage](readme_images/coverage_badge.svg?sanitize=true)
 
-To-do List  app using with Firebase, using RiverPod as state management and dependency
-injection.
+To-do List app using with Firebase, using RiverPod as state management and dependency injection.
 
 ### Below there are a few instructions about mandatory commands to be run in order to facilitate the work.
+
 ### Build the docker image
 
 Use docker build the container image
@@ -33,7 +33,9 @@ docker run -d -p 8080:80 --name todoapp up
 ```bash
 flutter test
 ```
+
 #### Testing coverage
+
 ![Coverage](readme_images/coverage_badge.svg?sanitize=true)
 
 ### Firebase Scheme
@@ -45,6 +47,7 @@ flutter test
         ├── subject (String)
 
 ### Project Architecture
+
 - Remote Service : managing remote connection with firebase
 - Repository : talking to data sources to prepare the data
 - ViewModel : Managing differnet ui states and provide streams for ui
@@ -55,8 +58,9 @@ flutter test
 Actually the project has been implemented with **Navigator 2.0** or **Route API**.
 
 ### Responsive and Adaptive
-This To-do app project uses responsive and adaptive principles to use it on different screen sizes and any devices, like
-mobile phones, tablets, computers, notebooks, etc.
+
+This To-do app project uses responsive and adaptive principles to use it on different screen sizes
+and any devices, like mobile phones, tablets, computers, notebooks, etc.
 
 ### Project screenshots
 
@@ -77,11 +81,18 @@ mobile phones, tablets, computers, notebooks, etc.
     <td><img src="readme_images/android7.png" width=270 height=480></td>
   </tr>
 <tr>
-    <td><img src="readme_images/web1.png" width=600 height=300></td>
-    <td><img src="readme_images/web2.png" width=600 height=300></td>
-    <td><img src="readme_images/web3.png" width=600 height=300></td>
+    <td><img src="readme_images/web1.png" width=900 height=600></td>
+
 
 </tr>
+<tr>
+   img src="readme_images/web2.png" width=900 height=600></td>
+</tr>
+<tr>
+    <td><img src="readme_images/web3.png" width=900 height=600></td>
+</tr>
+
+
  </table>
 
 
