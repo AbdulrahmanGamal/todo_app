@@ -65,6 +65,22 @@ and any devices, like mobile phones, tablets, computers, notebooks, etc.
 ### Project screenshots
 
 <table>
+<tr>
+    <td><img src="readme_images/web1.png" ></td>
+
+
+</tr>
+<tr>
+   img src="readme_images/web2.png" ></td>
+</tr>
+<tr>
+    <td><img src="readme_images/web3.png" ></td>
+</tr>
+
+</table>
+
+
+<table>
   <tr>
     <td><img src="readme_images/android1.png"  width=270 height=480></td>
     <td><img src="readme_images/android2.png"  width=270 height=480></td>
@@ -82,17 +98,3 @@ and any devices, like mobile phones, tablets, computers, notebooks, etc.
   </tr>
  </table>
 
-<table>
-<tr>
-    <td><img src="readme_images/web1.png" ></td>
-
-
-</tr>
-<tr>
-   img src="readme_images/web2.png" ></td>
-</tr>
-<tr>
-    <td><img src="readme_images/web3.png" ></td>
-</tr>
-
-</table>
