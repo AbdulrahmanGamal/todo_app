@@ -6,7 +6,6 @@ class CrudTodoPath {
   static const todo = 'todo';
   static const unknown = '404';
 }
-// Category detail '/todos/{id}'
 class CrudTodoInformationParser extends RouteInformationParser<CrudTodoConfig> {
   // @override
   // Future<CrudTodoConfig> parseRouteInformation(
@@ -65,13 +64,10 @@ class CrudTodoInformationParser extends RouteInformationParser<CrudTodoConfig> {
           // Home '/todos'
           return const CrudTodoConfigTodoList();
         }else if (uri.pathSegments.length == 2) {
-      // TODOs detail '/todos/{id}'
       final firstSegment = uri.pathSegments[0].toLowerCase();
       final secondSegment = uri.pathSegments[1];
       if (firstSegment == CrudTodoPath.category) {
-        if (secondSegment.isNotEmpty) {
-          return CrudTodoConfigUpdateTodo(secondSegment);
-        }
+        return CrudTodoConfigUpdateTodo(secondSegment);
       }
 
     }
