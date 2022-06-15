@@ -2,29 +2,12 @@
 
 To-do List app using with Firebase, using RiverPod as state management and dependency injection.
 
-### Below there are a few instructions about mandatory commands to be run in order to facilitate the work.
-
-### Build the docker image
-
-Use docker build the container image
+### to run the application execute the following command
 
 ```bash
-docker build -t up .
+docker-compose up
 ```
 
-If you have some problem during cache, you can clean cache by this
-
-```bash
-docker build --no-cache -t up .
-```
-
-### After Success building image
-
-Run the docker image with localhost 8080 port. You can change to any other port just replace it.
-
-```bash
-docker run -d -p 8080:80 --name todoapp up
-```
 - Also its accessible throw this link : http://localhost:8080/#/todo
 
 ### to run project unit test and widget test use
